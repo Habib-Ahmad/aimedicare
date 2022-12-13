@@ -1,0 +1,60 @@
+@import "../../styles/main.module.scss";
+
+.container {
+  position: relative;
+  padding: 60px 10vw;
+
+  h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+  }
+}
+
+.pattern {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10vw;
+  @include responsive(md) {
+    height: 30vh;
+  }
+}
+
+.offers {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  @include responsive(md) {
+    flex-wrap: wrap;
+  }
+  @include responsive(sm) {
+    flex-direction: column;
+  }
+}
+
+.offer {
+  width: 22%;
+  @include responsive(md) {
+    width: 48%;
+    margin-bottom: 40px;
+  }
+  @include responsive(sm) {
+    width: 100%;
+  }
+}
+
+.icon {
+  width: 100px;
+}
+
+.offerHeading {
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.offerDesc {
+  color: $color-text-light;
+  font-weight: 500;
+  font-size: 0.85rem;
+}
