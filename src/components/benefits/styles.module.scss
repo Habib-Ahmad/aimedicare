@@ -1,0 +1,57 @@
+@import "../../styles/main.module.scss";
+
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $color-primary;
+  padding: 60px 5vw 60px;
+  z-index: 0;
+  @include responsive(md) {
+    padding: 60px 5vw 200px;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+
+.phone {
+  width: 35%;
+  height: auto;
+  object-fit: contain;
+  margin-top: -200px;
+
+  @include responsive(md) {
+    width: 90%;
+    margin-bottom: 60px;
+  }
+}
+
+.textWrapper {
+  color: $color-white;
+  padding: 0 5vw;
+
+  h2 {
+    margin-bottom: 10px;
+  }
+
+  ul {
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 0.9rem;
+
+    li {
+      margin-bottom: 5px;
+    }
+  }
+
+  button {
+    background-color: $color-white;
+    color: $color-primary;
+    font-weight: 600;
+    &:hover {
+      background-color: $color-primary;
+      color: $color-white;
+    }
+  }
+}

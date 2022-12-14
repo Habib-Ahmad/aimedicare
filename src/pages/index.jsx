@@ -1,3 +1,4 @@
+import Benefits from "../components/benefits";
 import Checker from "../components/checker";
 import Consultation from "../components/consultation";
 import Header from "../components/header";
@@ -11,6 +12,7 @@ const Home = () => {
       <Offer />
       <Checker />
       <Consultation />
+      <Benefits />
     </div>
   );
 };
