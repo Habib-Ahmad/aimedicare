@@ -1,0 +1,53 @@
+@import "../../styles/main.module.scss";
+
+.container {
+  position: relative;
+}
+
+.content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -200px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 60px 0 120px 15vw;
+  @include responsive(md) {
+    padding: 60px 10vw 120px;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+  }
+}
+
+.textWrapper {
+  width: 40%;
+  margin-bottom: 60px;
+  @include responsive(md) {
+    width: 100%;
+  }
+  h2 {
+    margin-bottom: 10px;
+  }
+
+  ul {
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 0.9rem;
+
+    li {
+      margin-bottom: 5px;
+    }
+  }
+}
+
+.phone {
+  width: 50%;
+  height: auto;
+  object-fit: contain;
+
+  @include responsive(md) {
+    width: 90%;
+    margin-bottom: 60px;
+  }
+}

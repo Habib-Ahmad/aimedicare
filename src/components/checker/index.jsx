@@ -18,7 +18,9 @@ const Checker = () => {
           productivity with Promage.
         </p>
 
-        <Button variant="contained">Get Started for Free</Button>
+        <Button variant="contained" size="large">
+          Get Started for Free
+        </Button>
       </div>
     </div>
   );
