@@ -1,0 +1,22 @@
+@import "../../styles/main.module.scss";
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  max-width: 100%;
+}
+
+.icon {
+  @include responsive(xs) {
+    width: 45px;
+  }
+}
+
+.copyright {
+  text-align: center;
+  border-top: 1px solid #fbfcfc;
+  padding: 40px;
+  font-weight: 500;
+}

@@ -14,6 +14,12 @@
   align-items: flex-end;
   justify-content: space-between;
   padding: 60px 0 200px 15vw;
+  @include responsive(xl) {
+    align-items: center;
+  }
+  @include responsive(xl) {
+    align-items: flex-end;
+  }
   @include responsive(md) {
     padding: 60px 10vw 200px;
     flex-direction: column-reverse;
