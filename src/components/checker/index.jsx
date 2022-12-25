@@ -4,7 +4,7 @@ import pattern from "../../assets/checker-pattern.svg";
 import phone from "../../assets/checker-phone.png";
 import styles from "./styles.module.scss";
 
-const Checker = () => {
+const Checker = ({ handleOpen }) => {
   return (
     <div className={styles.container}>
       <Image src={phone} alt="" className={styles.phone} />
@@ -18,7 +18,7 @@ const Checker = () => {
           productivity with Promage.
         </p>
 
-        <Button variant="contained" size="large">
+        <Button variant="contained" size="large" onClick={handleOpen}>
           Get Started for Free
         </Button>
       </div>

@@ -1,0 +1,109 @@
+@import "../../styles/main.module.scss";
+
+.container {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  width: 90%;
+  max-width: 800px;
+  background-color: $color-primary;
+  padding: 20px;
+  padding-bottom: 60px;
+  border-radius: 20px;
+}
+
+.close {
+  display: block;
+  margin-left: auto;
+  width: 40px;
+  cursor: pointer;
+}
+
+.logo {
+  position: absolute;
+  top: -30%;
+  right: 00%;
+  width: 50%;
+  z-index: -100;
+}
+
+.phone {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 150px;
+  height: auto;
+  object-fit: contain;
+  z-index: -100;
+}
+
+.contentWrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0 60px;
+  @include responsive(sm) {
+    flex-direction: column-reverse;
+    padding: 0px;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.bell {
+  width: 60px;
+  @include responsive(sm) {
+    display: block;
+    margin: auto;
+  }
+}
+
+.content {
+  width: 60%;
+  @include responsive(sm) {
+    width: 100%;
+  }
+  h2 {
+    color: $color-white;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    @include responsive(sm) {
+      font-size: 2rem;
+    }
+
+    span {
+      color: $color-secondary;
+    }
+  }
+
+  p {
+    color: $color-white;
+    margin-bottom: 20px;
+    font-weight: 500;
+  }
+
+  form {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    input {
+      color: $color-white;
+      background-color: #ffffff24;
+      border: none;
+      outline: none;
+      &::placeholder {
+        font-weight: 500;
+      }
+    }
+
+    button {
+      margin-left: 10px;
+      height: 40px;
+      border-radius: 8px;
+      width: 100px;
+      background-color: #006163;
+    }
+  }
+}

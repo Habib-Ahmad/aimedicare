@@ -2,3 +2,9 @@
 
 .container {
 }
+
+.modalContent {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}

@@ -5,7 +5,7 @@ import pattern from "../../assets/header-pattern.svg";
 import phone from "../../assets/header-phone.png";
 import styles from "./styles.module.scss";
 
-const Header = () => {
+const Header = ({ handleOpen }) => {
   return (
     <header className={styles.container}>
       <Image src={pattern} alt="" className={styles.pattern} />
@@ -16,7 +16,7 @@ const Header = () => {
           <p>AiMedicare</p>
         </div>
 
-        <Button variant="contained" size="large">
+        <Button variant="contained" size="large" onClick={handleOpen}>
           Get Started For Free
         </Button>
       </div>
@@ -34,7 +34,7 @@ const Header = () => {
             can skip the long waiting period by talking to a doctor at the
             comfort of your home.
           </p>
-          <Button variant="contained" size="large">
+          <Button variant="contained" size="large" onClick={handleOpen}>
             Get Started For Free
           </Button>
         </div>

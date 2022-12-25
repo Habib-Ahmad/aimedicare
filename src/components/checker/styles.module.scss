@@ -34,7 +34,7 @@
   object-fit: contain;
 
   @include responsive(md) {
-    width: 150%;
+    width: 100%;
     margin-bottom: 60px;
   }
 }

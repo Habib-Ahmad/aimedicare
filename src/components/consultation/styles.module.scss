@@ -1,26 +1,16 @@
 @import "../../styles/main.module.scss";
 
 .container {
-  position: relative;
-  height: 100vh;
+  min-height: 80vh;
 }
 
 .content {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: -200px;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: space-between;
   padding: 60px 0 200px 15vw;
-  @include responsive(xl) {
-    align-items: center;
-  }
-  @include responsive(xl) {
-    align-items: flex-end;
-  }
   @include responsive(md) {
+    top: -100px;
     padding: 60px 10vw 200px;
     flex-direction: column-reverse;
     justify-content: flex-start;
