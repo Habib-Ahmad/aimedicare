@@ -10,32 +10,32 @@ const Offer = () => {
   return (
     <div className={styles.container}>
       <Image src={pattern} alt="" className={styles.pattern} />
-      <h2>What we offer</h2>
+      <h2 data-aos="fade-up">What we offer</h2>
 
       <div className={styles.offers}>
-        <div className={styles.offer}>
+        <div className={styles.offer} data-aos="fade-up" data-aos-delay="100">
           <Image src={book} alt="" className={styles.icon} />
           <p className={styles.offerHeading}>Book a doctor</p>
           <p className={styles.offerDesc}>
-            Click the “Book an appointment to forward your resquest”​
+            Click the “Book an appointment to forward your resquest”
           </p>
         </div>
-        <div className={styles.offer}>
+        <div className={styles.offer} data-aos="fade-up" data-aos-delay="200">
           <Image src={symptoms} alt="" className={styles.icon} />
-          <p className={styles.offerHeading}>Know your symptoms?​</p>
+          <p className={styles.offerHeading}>Know your symptoms?</p>
           <p className={styles.offerDesc}>
-            Find the right Doctor and send the diagnosis before consultation​
+            Find the right Doctor and send the diagnosis before consultation
           </p>
         </div>
-        <div className={styles.offer}>
+        <div className={styles.offer} data-aos="fade-up" data-aos-delay="300">
           <Image src={prescription} alt="" className={styles.icon} />
           <p className={styles.offerHeading}>Prescription</p>
           <p className={styles.offerDesc}>
             Receive Digital prescription and send to the pharmacy or pick it up
-            yourself​
+            yourself
           </p>
         </div>
-        <div className={styles.offer}>
+        <div className={styles.offer} data-aos="fade-up" data-aos-delay="400">
           <Image src={vitals} alt="" className={styles.icon} />
           <p className={styles.offerHeading}>Monitor vitals remotely</p>
           <p className={styles.offerDesc}>

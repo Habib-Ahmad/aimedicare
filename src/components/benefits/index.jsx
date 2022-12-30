@@ -6,9 +6,13 @@ import styles from "./styles.module.scss";
 const Benefits = ({ handleOpen }) => {
   return (
     <div className={styles.container}>
-      <Image src={phone} alt="" className={styles.phone} />
+      <Image src={phone} alt="" className={styles.phone} data-aos="fade-up" />
 
-      <div className={styles.textWrapper}>
+      <div
+        className={styles.textWrapper}
+        data-aos="fade-up"
+        data-aos-delay="200"
+      >
         <h2>Benefits of using our service</h2>
         <ul>
           <li>See a physician within an hour</li>

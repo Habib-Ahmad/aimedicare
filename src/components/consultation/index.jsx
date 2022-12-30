@@ -7,7 +7,7 @@ const Consultation = ({ handleOpen }) => {
   return (
     <div className={styles.container}>
       <div className={styles.content}>
-        <div className={styles.textWrapper}>
+        <div className={styles.textWrapper} data-aos="fade-up">
           <h2>Audio and Video Consultation</h2>
           <ul>
             <li>Talk to a licensed physician by voice or video.</li>
@@ -26,7 +26,13 @@ const Consultation = ({ handleOpen }) => {
           </Button>
         </div>
 
-        <Image src={phone} alt="" className={styles.phone} />
+        <Image
+          src={phone}
+          alt=""
+          className={styles.phone}
+          data-aos="fade-up"
+          data-aos-delay="200"
+        />
       </div>
     </div>
   );
