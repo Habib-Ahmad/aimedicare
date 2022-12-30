@@ -4,8 +4,9 @@ on:
   push:
     branches:
       - main
-    name: aimedicare-landing-page-2
-    owner: AIMedicare
+    repository:
+      name: aimedicare-landing-page-2
+      owner: AIMedicare
 
 jobs:
   web-deploy:
